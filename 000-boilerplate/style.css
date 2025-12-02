@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 body {
   font-family: "Roboto", sans-serif;
   display: flex;
@@ -14,3 +15,10 @@ body {
   overflow: hidden;
   margin: 0;
 }
+
+div#title {
+  font-size: smaller;
+  color: chartreuse;
+}
+
+/* body中对字体的大小设置优于在div#title中设置的 */
