@@ -71,7 +71,7 @@ body {
   transition-delay: 0.3s;
 }
 
-.container.show-nav .circle {
+.container.show-nav .circle { 
   transform: rotate(-70deg);
 }
 
@@ -92,10 +92,11 @@ nav ul li {
   color: #fff;
   margin: 40px 0;
   transform: translateX(-100%);
-  transition: transform 0.4s ease-in;
+  transition: transform 0.2s ease-in;
 }
 
 nav ul li i {
+  color: #ff7979;
   font-size: 20px;
   margin-right: 10px;
 }
@@ -108,6 +109,11 @@ nav ul li + li {
 nav ul li + li + li {
   margin-left: 30px;
   transform: translateX(-200%);
+}
+
+nav ul li + li + li+ li {
+  margin-left: 45px;
+  transform: translateX(-250%);
 }
 
 .content {

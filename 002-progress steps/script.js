@@ -3,17 +3,16 @@ const prev = document.getElementById("prev");
 const next = document.getElementById("next");
 const steps = document.querySelectorAll(".step");
 
-let currentActive = 1;
+let currentActive = 2;
 
 next.addEventListener("click", () => {
   currentActive++;
   if (currentActive > steps.length) currentActive = steps.length;
   update();
 });
-
 prev.addEventListener("click", () => {
   currentActive--;
-  if (currentActive < 1) currentActive = 1;
+  if (currentActive < 2) currentActive = 2;
   update();
 });
 
@@ -32,3 +31,6 @@ const update = () => {
     next.disabled = false;
   }
 };
+
+update();
+
